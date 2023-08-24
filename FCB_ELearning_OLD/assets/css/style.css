@@ -1,0 +1,210 @@
+.disabled,.disabled:hover{background-color:#eee!important;border-color:#eeeef8!important;cursor:not-allowed!important;color:grey!important;}
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../images/bg-ui.jpg");
+  position: sticky;
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  line-height: 1.4;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ________ HOME PAGE ________ */
+
+.home-page {
+  margin: 0;
+  padding: 0;
+}
+
+.home-top-section {
+  display: flex;
+  flex-direction: row;
+  height: 50vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.nav-home {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 25vw;
+  display: block;
+}
+
+.nav-home img {
+  width: 19vw;
+}
+
+.nav-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 2%;
+  margin-left: 1.5vw;
+}
+
+.nav-icons a img {
+  width: 4vw;
+  background-image: #000;
+  border-radius: 10rem;
+  box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-home {
+  width: 50vw;
+}
+
+.carousel-home img {
+  width: 50vw;
+  height: 50vh;
+}
+
+.calendar-home {
+  width: 25vw;
+}
+
+.calendar-home img {
+  width: 18vw;
+  margin-left: 1rem;
+}
+
+.user-info {
+  margin: 1.5rem 0 0 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 3vw;
+}
+
+.user-info a img {
+  width: 3vw;
+}
+
+.home-bottom-section {
+  display: flex;
+  flex-direction: row;
+  gap: 1%;
+  margin-top: 2vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.card-home {
+  min-height: 45vh;
+}
+
+/* ________ USER PROFILE ________ */
+
+.user-page {
+  display: flex;
+}
+
+.user-page-left {
+  margin: 2rem auto;
+  width: 30vw;
+}
+
+.user-data {
+  display: flex;
+}
+
+.user-data img {
+  width: 10vw;
+}
+
+.user-page-info {
+  display: block;
+  margin-left: 1rem;
+}
+
+.user-buttons {
+  margin: 2rem 0 0 0;
+  display: flex;
+  flex-flow: column;
+  gap: 1.5vh;
+}
+
+.user-page-right {
+  margin: 2rem auto;
+  width: 30vw;
+}
+
+.user-date {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-date img {
+  width: 3vw;
+}
+
+form.example input[type="text"] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+  border-radius: 2rem 0 0 2rem;
+}
+
+.user-search {
+  margin: 1rem 0 0 0;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196f3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+  border-radius: 0 2rem 2rem 0;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.stats-title {
+  color: rgb(81, 156, 6);
+  margin-top: 1.5vw;
+}
+
+.card-statistics-main {
+  height: 20vh;
+}
+
+.card-statistics {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-statistics img {
+  width: 5vw;
+  height: 5vw;
+}
+
+.user-image-container {
+  display: flex;
+}
+
+.user-image-container img {
+  margin: 0 auto;
+  width: 20vw;
+}

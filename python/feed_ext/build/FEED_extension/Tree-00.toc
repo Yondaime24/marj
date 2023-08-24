@@ -1,0 +1,10 @@
+('d:\\env\\python379\\lib\\site-packages\\certifi-2022.6.15-py3.7.egg',
+ None,
+ {'*.py', '*.pyd', '*.cp37-win32.pyd', '*.pyw', 'EGG-INFO', '*.pyc'},
+ 'DATA',
+ [('certifi\\cacert.pem',
+   'd:\\env\\python379\\lib\\site-packages\\certifi-2022.6.15-py3.7.egg\\certifi\\cacert.pem',
+   'DATA'),
+  ('certifi\\py.typed',
+   'd:\\env\\python379\\lib\\site-packages\\certifi-2022.6.15-py3.7.egg\\certifi\\py.typed',
+   'DATA')])

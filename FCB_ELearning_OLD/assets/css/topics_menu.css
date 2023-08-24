@@ -1,0 +1,77 @@
+*{outline:none!important;box-sizing:border-box;}
+html,body{margin:0;padding:0;width:100%;height:100%;}
+body{overflow:auto!important;animation: fade 2s;-moz-animation:fade 2s;-ms-animation:fade 2s;-o-animation:fade 2s;-webkit-animation:fade 2s;}
+.card01{position:relative;background-color:white;width:100%;height:250px;box-shadow:0px 0px 10px rgba(0,0,0,0.3);margin-top:10px;border-radius:10px;cursor:pointer;}
+.card01:hover{transition:0.5s;box-shadow:3px 3px 10px rgba(0,0,0,0.3);}
+.card01-img{width:100%;height:198px;background-color:rgb(208, 208, 208);position:relative;border-top-left-radius:10px;border-top-right-radius:10px;}
+.card01-title{background-color:rgba(0, 0, 0, 0.516);color:white;display:inline-block;padding:5px;position:absolute;top:8px;left:0px;font-size:12pt;border-top-right-radius:5px;border-bottom-right-radius:5px;}
+.card01-about-icon{color:white;position:absolute;top:5px;right:5px;cursor:pointer;font-size:18pt;}
+.card01-des{display:none;width:100%;height:100%;z-index:2;background-color:rgba(0, 0, 0, 0.815);position:absolute;top:0;left:0;color:white;padding:20px;border-radius:10px;}
+.card01-close{border:none;background-color:white;color:black;border-radius:50%;width:25px;height:25px;position:absolute;top:10px;right:5px;}
+.trans{animation:opac 0.5s ease;-webkit-animation:opac 0.5s ease;-moz-animation:opac 0.5s ease;-ms-animation:opac 0.5s ease;-o-animation:opac 0.5s ease;}
+.card01-button{position:absolute;bottom:2px;left:0px;right:0;margin:auto;width:100%;height:50px;text-align:center;padding-top:10px;border-top:1px solid #dddddd;}
+/* sider */
+.sider{z-index:10000;width:250px;height:100%;float:left;background-color:white;position:fixed;top:0;left:0;}
+.sider .profile{position:relative;width:100%;min-height:200px;padding-top:2vh;}
+.sider .profile .profile-pic{width:15vh;height:15vh;border-radius:50%;border:1px solid #dddddd;background-color:#eee;}
+.sider .profile .profile-name{font-weight:bolder;margin:1vh 0 1vh 0;font-size: 2vh;}
+/* end sider */
+.content{min-height:100px;width:100%;padding-left:250px;position:relative;}
+.bars{display:none;z-index:3;position:fixed;left:2px;top:2px;}
+.barclose{display:none;position:absolute;right:2px;top:2px;}
+.bar01{background-color:black;color:white;border:none;border-radius:5px;}
+.card01-plus{cursor:pointer;}
+.red{border-color:red!important;}
+.green{border-color:green!important;}
+@keyframes opac{
+from{opacity:0.1}to{opacity:1;}
+}
+@media(max-width:530px){
+.sider{display:none;}
+.content{padding-left:0px;}
+.bars{display:block;}
+.barclose{display:block;}
+}
+.card01-plus:hover{background-color:#eee;}
+.menu-btn:hover{background-color:#25c0df!important;color:white;border-color:#25c0df!important;}
+@keyframes shake{
+  0%{transform:rotate(2deg);}
+  50%{transform:rotate(0deg);}
+  100%{transform:rotate(-2deg);}
+}
+.card01-hover{animation:shake 0.5s ease;}
+/* additional design */
+@keyframes fade {from {opacity: 0;}to {opacity: 1;}}
+@-webkit-keyframes fade {from {opacity: 0;}to {opacity: 1;}}
+@-moz-keyframes fade {from {opacity: 0;}to {opacity: 1;}}
+@-ms-keyframes fade {from {opacity: 0;}to {opacity: 1;}}
+.spent-c{display:flex;flex-direction:row;font-size:24px;font-weight:bold;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;color:#3498db; margin: 5vh 0 5vh 0;}
+.spent-c p {margin-left:3px;}
+.topics-f{font-size:2.2vh;border: 1px solid #48b02b;padding:0px 15px 0px 15px;border-radius:5px;display:flex;align-items:center;justify-content:center;}
+.quiz-f{font-size:2.2vh;border: 1px solid #48b02b;padding:0px 15px 0px 15px;border-radius:5px;}
+.vl{border-left:2px solid #48b02b;height:10vh;}
+.circleBase{border-radius:50%;display:flex;justify-content:center;align-items:center;}
+.type{width: 12vh;height: 12vh;background:#48b02b;animation:glow 1s infinite alternate;-webkit-animation:glow 1s infinite alternate;-moz-animation:glow 1s infinite alternate;-ms-animation:glow 1s infinite alternate}
+@keyframes glow {from{box-shadow:0 0 10px -10px #76e278;}to{box-shadow: 0 0 10px 10px #76e278;}}
+@-webkit-keyframes glow {from{box-shadow:0 0 10px -10px #76e278;}to{box-shadow: 0 0 10px 10px #76e278;}}
+@-moz-keyframes glow {from{box-shadow:0 0 10px -10px #76e278;}to{box-shadow: 0 0 10px 10px #76e278;}}
+@-ms-keyframes glow {from{box-shadow:0 0 10px -10px #76e278;}to{box-shadow: 0 0 10px 10px #76e278;}}
+.type span{font-size:4vh;color:white;}
+.type2 span{font-size:4vh;color:white;}
+.circleBase2{border-radius:50%;display:flex;justify-content:center;align-items:center;}
+.type2{width: 12vh;height: 12vh;background:#48b02b;animation:glow 1s infinite alternate;-webkit-animation:glow 1s infinite alternate;-moz-animation:glow 1s infinite alternate;-ms-animation:glow 1s infinite alternate}
+.vl2{border-left:2px solid #48b02b;height:10vh;}
+.topics-div{display:flex;justify-content:center;align-items:center;flex-direction:column;position:relative;height: 70vh;padding-top: 4vh;border-top: 2px solid #eee;}
+.up-div{height:26vh;}
+.branch-des{margin-bottom: 1vh;font-size:2vh;}
+.nav-btn{position: fixed;top: 5px;right: 20px;z-index: 1;}
+.nav-btn #profile{width: 45px;height: 45px;background-color: #48b02b;border-radius: 40px 40px;color: white;display: flex;justify-content: center;align-items: center;text-decoration: none;margin-bottom: 10px; box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.6);-moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);-o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);transition: .5s;}
+.nav-btn #profile:hover{background-color: green;}
+/* end additional design */
+#searchbar{padding-left:35px;outline: none;border: 1px solid rgb(152, 185, 84);border-radius: 10px;background-image: linear-gradient(white, rgb(218, 253, 167));transition: background 0.25s, box-shadow 0.25s;}
+#search_btn{position:absolute;left:3px;top:2px;height:30px;width:30px;background: #48b02b;border:none;color: #ffffff;border-radius: 50px;}
+#search_btn:hover{background-color: green;transition: .5s;}
+
+#myBtn{position: fixed;bottom: 20px;right: 30px;z-index: 99;font-size: 18px;border: none;outline: none;background-color: #48b02b;color: white;cursor: pointer;padding: 8px 12px 8px 12px;border-radius: 4px;text-decoration: none;display: none;}
+#myBtn:hover{background-color: green;}
+.hover:hover{box-shadow:0 0 5px 5px yellow;transition: .5s;color:orange;}

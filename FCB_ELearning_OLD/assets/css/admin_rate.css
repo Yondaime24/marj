@@ -1,0 +1,310 @@
+.top-loader{width:90%;height:5px;z-index:1000;position:fixed;top:0px;left:0px;}.top-loader div{width:100%;height:100%;background-color:#d73801;animation:tow ease-in 10s}@keyframes tow{0%{width:0%} 5%{width:30%} 50%{width:60%} 100%{width:90%;}}
+html, body{
+    margin: 0px;
+    width: 100vw;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    background-color: #eee;
+    position: relative;
+}
+main{
+    background-color: white;
+    width: 90vw;
+    margin: 20px 0px 20px 0px;
+    padding: 20px 5px 5px 5px;
+    box-shadow: 0 0 20px #ccc;
+    border-radius: 10px;
+    position: relative;
+    animation: opac 2s;
+    -moz-box-shadow: 0 0 20px #ccc;
+    -webkit-box-shadow: 0 0 20px #ccc;
+    -moz-animation:opac 2s;
+    -ms-animation:opac 2s;
+    -o-animation:opac 2s;
+    -webkit-animation:opac 2s;
+}
+#myBtn{
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #48b02b;
+    color: white;
+    cursor: pointer;
+    padding: 8px 12px 8px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    display: none;
+}
+#myBtn:hover{
+    background-color: green;
+}
+.nav-btn{
+    position: absolute;
+    top: 20px;
+    right: 18px;
+    z-index: 1;
+    animation: ttb 2s;
+  -moz-animation:ttb 2s;
+  -ms-animation:ttb 2s;
+  -o-animation:ttb 2s;
+  -webkit-animation:ttb 2s;
+}
+.nav-btn #profile{
+  width: 45px;
+  height: 45px;
+  background-color: #48b02b;
+  border-radius: 40px 40px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin-bottom: 10px;
+   box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  transition: .5s;
+}
+.nav-btn #profile:hover{
+    background-color: green;
+}
+.nav-btn #add_review{
+  width: 45px;
+  height: 45px;
+  background-color: #48b02b;
+  border-radius: 40px 40px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+   box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  transition: .5s;
+}
+.nav-btn #add_review:hover{
+    background-color: green;
+}
+.nav-btn #add_review i{
+    font-size: 24px;
+}
+.nav-btn #profile i{
+    font-size: 18px;
+}
+.upper_sec{
+    display: flex;
+}
+.upper_left{
+    flex: 0.5 1 0;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 0px 0px 20px;
+}
+.upper_left .title{
+    font-size: 5vh;
+}
+.containerdiv{
+    border: 0;
+    float: left;
+    position: relative;
+    width: 40vh;
+    margin: 30px 0px 30px 0px;
+}
+.cornerimage{
+    border: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+img{
+    max-width: 40vh;
+}
+.count_avg{
+    font-size: 3vh;
+}
+.upper_right{
+    flex: 1 1 0;
+    height: 50vh;
+    padding-bottom: 20px;
+}
+.barcontainer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.barcontainerheader{
+    display: inline;
+    position: absolute;
+    width: 100%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background: #663399;
+    border-bottom: 3px solid black;
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    z-index: 0;
+    display: none;
+}
+.bar {
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    border-radius: 6px 6px 0 0;
+    width: 10%;
+    text-align: center;
+    color: white;
+    box-shadow: 4px 0 8px #888;
+}
+.bar p{
+    color: black;
+    position: absolute;
+    top: -18px;
+    left: 0px;
+    right: 0px;
+}
+.barlabel{
+    position: absolute;
+    background-color: #eee;
+    bottom: -20px;
+    width: 100%;
+    color: black;
+}
+.bar:nth-child(2){
+    left: 15%;
+    background-color: #04AA6D;
+}
+.bar:nth-child(3){
+    left: 30%;
+    background-color: #2196F3;
+}
+.bar:nth-child(4){
+    left: 45%;
+    background-color: #00bcd4;
+}
+.bar:nth-child(5){
+    left: 60%;
+    background-color: #ff9800;
+}
+.bar:nth-child(6){
+    left: 75%;
+    background-color: #f44336;
+}
+.lower_sec{
+    flex: 1 1 0;
+    position: relative;
+   margin-top: 10px;
+}
+.lower_div{
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+    height: 35px;
+    background-color: #eee;
+}
+.lower_div span{
+    font-size: 3.5vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.dropdown{
+    float: right;
+    margin-right: 5px;
+    z-index: 1;
+}
+.dropdown-menu{
+    z-index: 1;
+}
+.cmt_div{
+    border-bottom:1px solid #b3b3b3;
+    position:relative;
+    padding: 10px;
+}
+.fnum{
+    font-weight: bold;
+}
+.snum{
+    font-weight: normal
+}
+.cmt{
+    background-color: #eee;
+    padding: 15px;
+    text-align: justify;
+}
+.date_rate{
+    font-style: italic;
+}
+.ago{
+    position:absolute;
+    right:10px;
+    top:10px;
+}
+.gold{
+    color: #ff9800;
+    font-size: 1.7vh;
+}
+.prev-a{
+    margin-left: 10px;
+    text-decoration: none!important;
+}
+.prev_cmt{
+    position: relative;
+}
+.fade-scale{
+    transform: scale(0);
+    opacity: 0;
+    -webkit-transition: all .25s linear;
+    -o-transition: all .25s linear;
+    -moz-transition: all .25s linear;
+    transition: all .25s linear;
+}
+.fade-scale.in{
+    opacity: 1;
+    transform: scale(1);
+}
+.count{
+    color: #48b02b;
+}
+@keyframes opac {
+ from {opacity: 0;}
+ to {opacity: 1;}
+}
+@-webkit-keyframes opac {
+ from {opacity: 0;}
+ to {opacity: 1;}
+}
+@-moz-keyframes opac {
+ from {opacity: 0;}
+ to {opacity: 1;}
+}
+@-ms-keyframes opac {
+ from {opacity: 0;}
+ to {opacity: 1;}
+}
+@keyframes ttb {
+ from {top: -120;}
+ to {top: 20px;}
+}
+@-webkit-keyframes ttb {
+    from {top: -120px;}
+    to {top: 20px;}
+}
+@-moz-keyframes ttb {
+     from {top: -120px;}
+      to {top: 20px;}
+}
+@-ms-keyframes ttb {
+    from {top: -120px;}
+    to {top: 20px;}
+}

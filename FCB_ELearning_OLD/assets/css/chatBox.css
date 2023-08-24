@@ -1,0 +1,37 @@
+.chatBox{table-layout:fixed;}
+.chatBox tr td div.c{width:50%;}
+.chatBox tr td{padding:2px;}
+.chatBox tr td.msg div {padding:5px;color:white; width: auto;}
+.chatBox tr td.right div {border-radius:10px 10px 2px 10px;background-color:#007bff;}
+.chatBox tr td.left div {border-radius:2px 10px 10px 10px;background-color:#AAAAAA;}
+
+.chatBox tr td.right{
+	padding: 0px 5px 5px 80px;
+	word-wrap: break-word;
+}
+.chatBox tr td.left{
+	padding: 0px 80px 5px 5px;
+	word-wrap: break-word;
+}
+#msg_modal .chatBox{table-layout:fixed;width:56vw;}
+#msg_modal .modal-body{overflow-x: hidden;}
+#msg_modal .chatBox tr td.right{padding: 0px 5px 5px 200px;}
+#msg_modal .chatBox tr td.left{padding: 0px 200px 5px 5px;}
+@media screen and (min-height: 937px) and (max-width: 1920px) {
+#msg_modal .chatBox{table-layout:fixed;width:40vw;}
+}
+
+.chatBoxBtnContact,.chatBoxBtn{border:1px solid #bdbdbd;border-radius:5px;background-color:#48b02b;color:white;}
+.chatBoxList{display:none;position:absolute;top:0;left:0;width:100%;height:100%;background-color:#ffffffd1;z-index:10;border-radius:50px;color:black;overflow:auto;padding:20px;}
+.chatBoxList::-webkit-scrollbar{width: 0;height: 0;}
+.chatBoxEditor{position:absolute;top:0;left:0;width:100%;height:100%;background-color:#ffffffd1;z-index:10;border-radius:50px;display:none;}
+.chatBoxTextField{border:2px solid #2bb91a;width:100%;height:50px;border-radius:10px;padding:10px 50px 10px 10px;resize:none;}
+.chatBoxSend{border:2px solid #2bb91a;border-radius:0px 10px 10px 0px;width:50px;height:50px;position:absolute;right:21px;top:70px;}
+.chatUserOnline{width:10px;height:10px;background-color:#02cf02;border-radius:50%}
+.chatlistdiv{display:inline-block;}
+.chatBoxList .list-group .list-group-item{cursor:pointer;}
+.chatBoxList .list-group .list-group-item:hover{background-color:#eee;}
+.chatbadge{font-size:8pt;color:red;position:absolute;top:2px;right:10px;font-weight:bolder;}
+.d::before{content: 'Date: ';font-size:7pt;}
+.d{content: 'Date: ';font-size:7pt;}
+

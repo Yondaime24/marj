@@ -1,0 +1,8 @@
+POST /test.php HTTP/1.1
+User-Agent: Mozilla/4.0 (Windows NT)
+Host: info.mctech4.com
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 13
+Connection: Keep-Alive
+
+data=testdata

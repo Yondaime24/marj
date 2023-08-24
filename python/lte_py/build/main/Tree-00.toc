@@ -1,0 +1,5 @@
+('C:\\Users\\cpu816user\\Desktop\\python\\lte_py\\build\\main\\pyserial-3.5-py3.7.egg',
+ None,
+ {'*.py', '*.cp37-win32.pyd', 'EGG-INFO', '*.pyc', '*.pyw', '*.pyd'},
+ 'DATA',
+ [])

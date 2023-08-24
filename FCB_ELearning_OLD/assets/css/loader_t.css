@@ -1,0 +1,33 @@
+ @keyframes rtate {
+    from {
+      transform: rotate(0deg);
+    } to {
+      transform: rotate(360deg);
+    }
+  }
+  .loader_t {
+    animation: rtate 1s ease infinite;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 5px solid #eee;
+    border-top: 5px solid #0e84c9;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  }
+
+  .loader_t_float {
+    animation: rtate 1s ease infinite;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 5px solid #eee;
+    border-top: 5px solid #0e84c9;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 100;  
+  }

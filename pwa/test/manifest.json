@@ -1,0 +1,38 @@
+{
+  "short_name": "testapp",
+  "name":  "I am testing the app",
+  "icons": [
+    {
+      "src": "resource/512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/testurl",
+  "background_color": "#ff0000",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#00ffff",
+  "shortcuts": [
+    {
+      "name": "Testing Application",
+      "short_name": "TestApp",
+      "description": "Test app for projects",
+      "url": "/test",
+      "icons": [
+        {
+          "src": "resource/192.png",
+          "sizes": "192x192"
+        }
+      ] 
+    }
+  ],
+  "description": "Test app information",
+  "screenshots": [
+    {
+      "src": "resource/s1.png",
+      "type": "image/png",
+      "sizes": "1311x783"
+    }
+  ]
+}

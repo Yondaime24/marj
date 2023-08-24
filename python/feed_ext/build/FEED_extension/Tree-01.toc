@@ -1,0 +1,7 @@
+('\\\\devsrv1\\htdocs2\\marj\\python\\feed_ext\\build\\FEED_extension\\charset_normalizer-2.1.0-py3.7.egg',
+ None,
+ {'*.py', '*.pyd', '*.cp37-win32.pyd', '*.pyw', 'EGG-INFO', '*.pyc'},
+ 'DATA',
+ [('charset_normalizer\\py.typed',
+   '\\\\devsrv1\\htdocs2\\marj\\python\\feed_ext\\build\\FEED_extension\\charset_normalizer-2.1.0-py3.7.egg\\charset_normalizer\\py.typed',
+   'DATA')])

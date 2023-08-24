@@ -1,0 +1,72 @@
+.menu{width:100%;height:500px;background-color:white;position:relative;}
+.menu-caption{width:100%;background-color:#0db57f;padding:10px;color:white;font-weight:bolder;margin-bottom:2px;position:relative;}
+.menu-caption .back{}
+
+/* Main Topics */
+.main-topic{width:100%;cursor:pointer;border-bottom:1px solid white;}
+.main-topic-title{color:white;font-weight:bolder;padding:10px;background-color:#1dafa1;height:45px;}
+/* End Main Topics */
+
+/* Sub Topic */
+.sub-topic{display:none;}
+.sub-topic-title{width:100%;padding:0px 5px 0px 5px;}
+.stt{background-color:#18857a;width:100%;height:45px;color:white;padding:10px;}
+.stt:hover{background-color:#136059;}
+/* End Sub Topic */
+
+/* slide design */
+.slide01{position:absolute;display:none;}
+/*.pptx-full{position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0, 0.5);}*/
+/* design of Contents  */
+.pptx-viewer{padding:20px;}
+.contents{padding:10px;position:relative;}
+.pptx-viewer .slide{}
+.content-left{padding:10px;width:20%;float:left;}
+.content-right{float:left;width:80%;padding:10px;display:none;}
+.contents{width:100%;height:100%;background-color:white;box-shadow:0 0 3px rgba(0,0,0,0.3);}
+@media(max-width:1600px) {
+.content-left{width:25%;}
+.content-right{width:75%;}
+}
+@media(max-width:1280px) {
+.content-left{width:30%;}
+.content-right{width:70%;}
+}
+@media(max-width:1000px) {
+.content-left{width:35%;}
+.content-right{width:65%;}
+}
+@media(max-width:760px) {
+.content-left{width:40%;}
+.content-right{width:60%;}
+}
+@media(max-width:480px) {
+.content-left{width:50%;}
+.content-right{width:50%;}
+}
+
+/* buttons  */
+#addTopic{}
+#startquiz{width:150px;height:50px;background-color:#3ecb49;top:20px;right:20px;position:fixed;color:white;font-weight;bolder;font-size:13pt;border-radius:10px;border:2px solid #61d56a;display:none;z-index:100000;}
+.prevnext{background-color:#2495b7;border:1px solid #45badd;color:white;padding:5px;border-radius:10x;}
+.loadmore{width:100%;height:40px;background-color:#b3b3b3;color:white;cursor:pointer;text-align:center;font-weight:bolder;font-size:14pt;padding:5px;}
+/* Topic Panel  */
+/* End Topic Panel */
+.progress-loader{width:100%;border:1px solid #c9c9c9;height:30px;margin-top:20px;display:none;border-radius:10px;}
+.progress-loader div{width:0%;height:100%;background-color:#0b9b30;text-align:center;border-radius:10px;text-overflow:hidden;font-size:12pt;}
+
+.read, .continue,.start,.continueQ{border-radius:10px;height:60px;width:auto;border:3px solid white;color:white;font-weight:bold;padding:5px 20px 5px 20px;}
+.read{background-color:#32b532}
+.read:hover{background-color:#78cd78;}
+.continue{background-color:#eb9801}
+.continue:hover{background-color:#dfb363;}
+.start{background-color:#328db5;}
+.start:hover{background-color:#89b4c7;}
+.continueQ{background-color:#14aee3;}
+.continueQ:hover{background-color:#92cadd;}
+@keyframes border-anim{
+0%{border-top-color:#12d137;}
+25%{border-right-color:#12d137;}
+50%{border-bottom-color:#12d137;}
+100%{border-left-color:#12d137;}
+}

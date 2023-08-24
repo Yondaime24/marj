@@ -1,0 +1,29 @@
+body{margin:0;}
+*{box-sizing:border-box;outline:none;}
+.chat-wrap{position:relative;width:700px;height:500px;border:1px solid grey;background-color:#eee;}
+.chat-sider{z-index:10;width:200px;height:100%;background-color:#079b68;float:left;position:absolute;}
+.user-wrap{padding:5px;}
+.user-list{box-shadow:0 0 3px rgba(0,0,0,0.5);cursor:pointer;border-radius:5px;background-color:white;width:100%;height:50px;margin-bottom:1px;position:relative;}
+.user-pic{width:40px;height:40px;border:1px solid grey;border-radius:50%;}
+.user-pic{position:absolute;top:5px;left:3px;}
+.user-name{font-size:8pt;position:absolute;top:18px;left:0px;padding-left:45px;text-align:left;width:100%;}
+.online-status{width:10px;height:10px;background-color:#038d03;border-radius:50%;bottom:1px;right:0px;position:absolute;}
+.user-list:hover{background-color:#eee;}
+.chat-title-wrap{padding-bottom:5px;}
+.chat-title{width:100%;height:50px;color:white;text-align:center;font-weight:bolder;font-size:20pt;padding-top:10px;}
+.chat-msg{width:100%;height:100px;padding-left:200px;box-shadow:0 0 3px rgba(0,0,0,0.5);}
+/*200px is the width of the sider*/
+.left-chat{border-radius:10px;width:300px;background-color:#e3e3e3;color:black;padding:10px;float:left;margin-bottom:5px;}
+.left-chat-wrap{width:100%;min-height:50px;}
+.right-chat{border-radius:10px;width:300px;background-color:#119cd9;color:white;padding:10px;float:right;margin-bottom:5px;}
+.right-chat-wrap{width:100%;min-height:50px;}
+.chat-msg-wrap{padding:10px;background-color:white;overflow-y:auto;overflow-x:hidden;height:350px;}
+.chat-msg-header{height:50px;width:100%;background-color:#06895c;}
+.chat-msg-footer{height:100px;width:100%;background-color:#06895c;position:absolute;left:0;bottom:0;padding-left:200px;}
+.chat-box-wrap{padding:0px;}
+.chat-input{box-shadow:0 0 3px rgba(0,0,0,0.5);resize:none;height:100px;width:400px;border-radius:5px;border:1px solid green;padding:10px;}
+.chat-button-send{padding:23px;font-size:20pt;background-color:white;cursor:pointer;position:absolute;top:1px;right:1px;width:96px;height:98px;border:none;color:#119cd9;}
+.chat-button-send:hover{color:#0a7aab;}
+.user-search{width:100%;height:35px;padding:10px;border-radius:5px;border:none;}
+.chat-user-active{background-color:rgb(74, 177, 250)!important;color:white;}
+.chat-user-name{color:white;font-weight:bolder;padding:10px;;}

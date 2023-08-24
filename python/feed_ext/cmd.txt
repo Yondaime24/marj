@@ -1,0 +1,5 @@
+pyinstaller main.py --onefile --windowed --icon=logo.ico
+
+cython c_sys.pyx
+
+gcc c_sys.c -ID:\env\python379\include -LD:\env\python379 -lpython37 
